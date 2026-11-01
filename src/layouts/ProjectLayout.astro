@@ -48,7 +48,8 @@ const d = project.data;
 
   {d.abstract && <p class="project__abstract prose">{d.abstract}</p>}
 
-  {d.links.youtube && <div class="prose"><YouTubeEmbed url={d.links.youtube} title={d.title} /></div>}
+  {/* a short teaser, when there is one, is the embedded video; the full video stays a button */}
+  {(d.links.teaser ?? d.links.youtube) && <div class="prose"><YouTubeEmbed url={(d.links.teaser ?? d.links.youtube)!} title={d.title} /></div>}
 
   <div class="prose project__body">
     <slot />
