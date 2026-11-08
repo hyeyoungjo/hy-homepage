@@ -6,7 +6,7 @@ authors: ["Hye-Young Jo"]
 venue: "The Great Exodus (graduation exhibition)"
 abstract: "A bar for one guest at a time: I talk with an invited fellow artist, then mix a cocktail that works as their portrait, with color, scent, and taste read from who they are. Live performance with ice glasses, shown at The Great Exodus, my painting graduation exhibition."
 teaser: ./teaser.jpg
-teaserAlt: "1:1 Bar performance"
+teaserAlt: "Hye-Young mixing a cocktail at the 1:1 Bar"
 tags: ["performance", "participatory", "video"]
 links:
   youtube: "https://youtu.be/67qUyOnCZyI"
@@ -16,42 +16,37 @@ draft: false
 ---
 
 
-*Live performance with ice glasses and a single-channel video installation · 2014*
-
-*1:1 Bar* is a bar for one guest at a time. I sit across from one invited fellow artist, talk with
-them, and mix them a cocktail that works as a portrait, their personality and identity translated into color,
-scent, and taste.
-
 ## The recipe rules
 
-Every drink follows a fixed set of rules, so the cocktail is *read* from the person rather than picked
-from a menu:
+The cocktail is *read* from the person rather than picked from a menu. Every drink follows the same
+rules, painted on the wall behind the bar:
 
-- **Color:** kept as close as possible to the guest's own taste.
-- **Scent:** set by their sexual identity.
+- **Color:** as close as possible to the guest's favorite color.
+- **Scent:** chosen by their sexual identity.
 - **Sourness** ∝ how lively they are.
 - **Sweetness** ∝ how lonely they are.
 - **Bitterness** ∝ how considerate they are of others.
-- **Base liquor:** its character scaled to their sociability and leadership.
-- **First taste vs. last taste:** matched or mismatched depending on whether how they see themselves
-  lines up with how others see them.
-
-![](./rules.jpg)
+- **Base liquor:** stronger in character the more sociable and leading they are.
+- **First taste vs. last taste:** matched when how they see themselves agrees with how others see
+  them, mismatched when it does not.
 
 ## The bar
 
-The drinks were served in glasses made of ice, with a single-channel video playing alongside the live
-performance.
+A small purple room: bottles lit from below, the rules on one wall, and a monitor playing a video of
+the drinks shot from above.
 
-![](./performance-1.jpg)
+![](./bar.jpg)
+
+Each guest sat across from me for one conversation and one drink.
+
 ![](./performance-2.jpg)
+
+The glasses were made of ice, so every portrait started melting the moment it was poured.
+
 ![](./ice-glass.jpg)
-![](./ice-tray.gif)
 
 ## After
 
 By the end of the night every portrait had melted, each into its own puddle of color.
 
 ![](./melted.jpg)
-
-![](./invitation.jpg)
