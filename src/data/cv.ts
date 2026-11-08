@@ -248,7 +248,7 @@ export const CV: {
       title: 'Research Overview',
       kind: 'list',
       summary:
-        'Summary: I have published 8 full papers in ACM CHI (4), ACM UIST (2), IEEE ISMAR (1, in IEEE TVCG), and HCI Korea (1), and have two more under review.',
+        'Summary: I have published 8 full papers in ACM CHI (4), ACM UIST (2), IEEE ISMAR (1, in IEEE TVCG), and HCI Korea (1), and have two more in preparation.',
       works: [
         'research/map2video.jpg',
         'research/collagevis.jpg',
