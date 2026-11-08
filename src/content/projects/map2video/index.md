@@ -15,6 +15,7 @@ links:
   doi: "https://doi.org/10.1145/3830398.3830538"
   youtube: "https://youtu.be/TSwM24UpXzs"
   teaser: "https://youtu.be/jIL7-Xd6dFc"
+  presentation: "https://youtu.be/HChxRy_uPsw"
 featured: true
 order: 1
 draft: false
