@@ -13,6 +13,7 @@ links:
   doi: "https://arxiv.org/abs/2512.21796"
   youtube: "https://youtu.be/kyzg7RN4rUo"
 featured: true
+order: 2
 draft: false
 bibtex: |
   @misc{jo2025generativelecturemakinglecture,

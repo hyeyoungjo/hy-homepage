@@ -14,7 +14,7 @@ links:
   pdf: "https://arxiv.org/pdf/2603.08060"
   doi: "https://doi.org/10.1145/3830398.3830520"
   youtube: "https://youtu.be/HD1V7CWHo8w"
-featured: true
+featured: false
 draft: false
 bibtex: |
   @inproceedings{10.1145/3830398.3830520,

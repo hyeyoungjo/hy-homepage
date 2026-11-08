@@ -8,13 +8,32 @@ import { byNewest } from '../lib/site';
 
 type Project = CollectionEntry<'projects'>;
 
-// The home page is curated: only the handful marked `featured`, newest first.
-// Everything else lives on /work.
-const recent = (await getCollection('projects', ({ data }) => data.featured && !data.draft))
-  .sort(byNewest)
-  .slice(0, 4);
+// The home page is curated: one row per field, each showing only the pieces
+// marked `featured`, in their `order`. Everything else lives on /work.
+// A newest-first row would bury film and art under the latest papers.
+const featured = await getCollection('projects', ({ data }) => data.featured && !data.draft);
 
-// First sentence of the abstract, so the strip stays one or two lines.
+const byOrder = (a: Project, b: Project) =>
+  (a.data.order ?? Infinity) - (b.data.order ?? Infinity) || byNewest(a, b);
+
+// Row anchors match the section ids on /work.
+const ROWS: { title: string; type: Project['data']['type']; href: string }[] = [
+  { title: 'Research', type: 'research', href: '/work#research' },
+  { title: 'Film', type: 'film', href: '/work#film' },
+  { title: 'Artwork', type: 'art', href: '/work#artwork' },
+];
+
+const rows = ROWS.map((r) => ({
+  ...r,
+  items: featured.filter((p) => p.data.type === r.type).sort(byOrder).slice(0, 4),
+})).filter((r) => r.items.length > 0);
+
+// Solo pieces (most artwork) skip the author line: a lone "Hye-Young Jo"
+// under every painting says nothing the page does not already say.
+const hasCoauthors = (p: Project) =>
+  p.data.authors.some((a) => a.replace(/\*+$/, '').trim() !== 'Hye-Young Jo');
+
+// First sentence of the abstract, so the caption stays one or two lines.
 const gist = (abstract?: string) => abstract?.split(/(?<=\.)\s/)[0] ?? '';
 ---
 
@@ -22,48 +41,56 @@ const gist = (abstract?: string) => abstract?.split(/(?<=\.)\s/)[0] ?? '';
   <Hero />
   <Timeline />
 
-  <section class="recent container section">
-    <div class="recent__head">
-      <h2>Recent Projects</h2>
-      <a href="/work">All work →</a>
-    </div>
-    <div class="recent__row">
-      {
-        recent.map((p) => (
-          <figure class="recent__item">
-            <a href={`/${p.id}`}>
-              {p.data.teaser && (
-                <Image
-                  src={p.data.teaser}
-                  alt={p.data.teaserAlt ?? p.data.title}
-                  widths={[320, 640]}
-                  sizes="(max-width: 900px) 50vw, 300px"
-                />
-              )}
-            </a>
-            <figcaption>
-              <a href={`/${p.id}`}>{p.data.title}</a>
-              {p.data.authors.length > 0 && (
-                <span class="recent__authors">
-                  {p.data.authors.map((a, i) => (
-                    <>
-                      {i > 0 ? ', ' : ''}
-                      {a.replace(/\*+$/, '').trim() === 'Hye-Young Jo' ? <strong>{a}</strong> : a}
-                    </>
-                  ))}
-                </span>
-              )}
-              <span>{gist(p.data.abstract)}</span>
-            </figcaption>
-          </figure>
-        ))
-      }
-    </div>
+  <section class="selected container section">
+    <h2 class="selected__title">Selected Work</h2>
+    {
+      rows.map((row) => (
+        <div class="recent">
+          <div class="recent__head">
+            <h3>{row.title}</h3>
+            <a href={row.href}>All {row.title.toLowerCase()} →</a>
+          </div>
+          <div class="recent__row">
+            {row.items.map((p) => (
+              <figure class="recent__item">
+                <a href={`/${p.id}`}>
+                  {p.data.teaser && (
+                    <Image
+                      src={p.data.teaser}
+                      alt={p.data.teaserAlt ?? p.data.title}
+                      widths={[320, 640]}
+                      sizes="(max-width: 900px) 50vw, 300px"
+                    />
+                  )}
+                </a>
+                <figcaption>
+                  <a href={`/${p.id}`}>{p.data.title}</a>
+                  {hasCoauthors(p) && (
+                    <span class="recent__authors">
+                      {p.data.authors.map((a, i) => (
+                        <>
+                          {i > 0 ? ', ' : ''}
+                          {a.replace(/\*+$/, '').trim() === 'Hye-Young Jo' ? <strong>{a}</strong> : a}
+                        </>
+                      ))}
+                    </span>
+                  )}
+                  <span>{gist(p.data.abstract)}</span>
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+        </div>
+      ))
+    }
   </section>
 </BaseLayout>
 
 <style>
-  .recent.section { padding-top: 1.1rem; }
+  .selected.section { padding-top: 1.1rem; }
+  .selected__title { font-size: var(--section-title); margin: 0 0 1.25rem; }
+
+  .recent + .recent { margin-top: 2.25rem; }
 
   .recent__head {
     display: flex;
@@ -72,7 +99,7 @@ const gist = (abstract?: string) => abstract?.split(/(?<=\.)\s/)[0] ?? '';
     gap: 1rem;
     margin-bottom: 1.1rem;
   }
-  .recent__head h2 { font-size: var(--section-title); margin: 0; }
+  .recent__head h3 { font-size: 1.05rem; font-weight: 600; margin: 0; }
   .recent__head a { font-size: 0.9rem; }
 
   .recent__row {

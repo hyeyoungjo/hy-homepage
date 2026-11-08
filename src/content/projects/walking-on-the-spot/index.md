@@ -4,13 +4,14 @@ type: "art"
 year: 2015
 authors: ["Hye-Young Jo"]
 venue: "Dirt Luv (graduation exhibition)"
-abstract: "Part of Dirt Luv, my 2015 media art graduation exhibition. A wearable device that straps the body so it can only walk in place, an image of effort that never moves forward."
-teaser: ./walking-device.jpg
+abstract: "A wearable harness that ties the waist to the feet so that lifting one foot pulls the other back: the wearer can keep walking, but only in place. Shown at Dirt Luv, my media art graduation exhibition."
+teaser: ./teaser.jpg
 teaserAlt: "Walking on the Spot wearable device"
 tags: ["wearable", "device", "body"]
 links:
   youtube: "https://youtu.be/MTIujDGdeIw"
-featured: false
+featured: true
+order: 3
 draft: false
 ---
 

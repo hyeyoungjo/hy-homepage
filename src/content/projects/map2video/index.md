@@ -16,6 +16,7 @@ links:
   youtube: "https://youtu.be/TSwM24UpXzs"
   teaser: "https://youtu.be/jIL7-Xd6dFc"
 featured: true
+order: 1
 draft: false
 bibtex: |
   @inproceedings{10.1145/3830398.3830538,

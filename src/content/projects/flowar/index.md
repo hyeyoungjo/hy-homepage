@@ -15,7 +15,8 @@ links:
   youtube: "https://youtu.be/viH2Q6Sezsg"
   preview: "https://youtu.be/-_fTNI4oGoU"
   presentation: "https://youtu.be/m3P8FwX4H7c"
-featured: false
+featured: true
+order: 4
 draft: false
 bibtex: |
   @inproceedings{10.1145/3544548.3580897,

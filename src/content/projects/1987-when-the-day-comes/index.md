@@ -11,7 +11,8 @@ award: "Blue Dragon Film Awards 2018"
 tags: ["VFX", "compositing", "Dexter Studios"]
 links:
   youtube: "https://youtu.be/0x7Rzw4ejqM"
-featured: false
+featured: true
+order: 3
 draft: false
 ---
 

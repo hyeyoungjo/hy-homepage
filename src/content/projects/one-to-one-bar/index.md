@@ -4,21 +4,22 @@ type: "art"
 year: 2014
 authors: ["Hye-Young Jo"]
 venue: "The Great Exodus (graduation exhibition)"
-abstract: "Part of The Great Exodus, my 2014 painting graduation exhibition. A one-on-one performance bar where I mixed each visitor a cocktail translated from who they are: color, scent, and taste mapped to their personality and identity."
-teaser: ./bar.jpg
+abstract: "A bar for one guest at a time: I talk with an invited fellow artist, then mix a cocktail that works as their portrait, with color, scent, and taste read from who they are. Live performance with ice glasses, shown at The Great Exodus, my painting graduation exhibition."
+teaser: ./teaser.jpg
 teaserAlt: "1:1 Bar performance"
 tags: ["performance", "participatory", "video"]
 links:
   youtube: "https://youtu.be/67qUyOnCZyI"
-featured: false
+featured: true
+order: 1
 draft: false
 ---
 
 
 *Live performance with ice glasses and a single-channel video installation · 2014*
 
-*1:1 Bar* is a bar for one guest at a time. I sit across from a single visitor, talk with them, and
-mix them a cocktail that works as a portrait, their personality and identity translated into color,
+*1:1 Bar* is a bar for one guest at a time. I sit across from one invited fellow artist, talk with
+them, and mix them a cocktail that works as a portrait, their personality and identity translated into color,
 scent, and taste.
 
 ## The recipe rules
@@ -46,4 +47,11 @@ performance.
 ![](./performance-2.jpg)
 ![](./ice-glass.jpg)
 ![](./ice-tray.gif)
+
+## After
+
+By the end of the night every portrait had melted, each into its own puddle of color.
+
+![](./melted.jpg)
+
 ![](./invitation.jpg)

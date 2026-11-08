@@ -46,8 +46,11 @@ const projects = defineCollection({
       acmref: z.string().optional(),
       // Optional full-resolution original (e.g. a Google Drive link for artworks).
       originalLink: z.string().url().optional(),
-      // Show on the home page "Selected Work" section.
+      // Show in the home page "Selected Work" rows (one row per type).
       featured: z.boolean().default(false),
+      // Position within that row; lower comes first. Entries without an
+      // order fall back to newest-first after the ordered ones.
+      order: z.number().int().optional(),
       // Hide from the site without deleting the folder.
       draft: z.boolean().default(false),
     }),
