@@ -308,10 +308,11 @@ export const CV: {
     {
       title: 'Fellowship and Awards',
       kind: 'entries',
-      summary: 'Summary: I have received $176,000 in fellowships, awards, and travel grants.',
+      summary: 'Summary: I have received $181,000 in fellowships, awards, and travel grants.',
       entries: [
         { title: 'Google PhD Fellowship', date: 'Fall 2025 - Spring 2027', lines: ['Awarded in the Human-Computer Interaction category; full tuition and stipend ($85,000/year).'] },
-        { title: 'Ralph J. Slutz Student Excellence Award', date: '2025', lines: ['Awarded by the Department of Computer Science, University of Colorado Boulder ($1,000).'] },
+        { title: 'Girgensohn Family Endowed Graduate Fellowship', date: '2026', lines: ['Awarded to up to two PhD students a year by the Department of Computer Science, University of Colorado Boulder ($5,000).'] },
+        { title: 'Ralph J. Slutz Student Excellence Award', date: '2025', lines: ['Awarded to two graduate students a year by the Department of Computer Science, University of Colorado Boulder ($1,000).'] },
         { title: 'Gary Marsden Travel Award', date: '2024', lines: ['Awarded by ACM SIGCHI to attend CHI 2024 ($3,000).'] },
         {
           title: 'Travel Grants, University of Colorado Boulder',

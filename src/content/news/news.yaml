@@ -4,6 +4,9 @@
 # Lead with a past-tense verb when she did it (Presented, Joined, Received).
 # Papers: write Presented only when she gave the talk (first author, plus TingleTouch).
 # If she went and did not speak, write Attended.
+- id: girgensohn-fellowship-2026
+  date: 2026-11-11
+  text: "Received the Girgensohn Family Endowed Graduate Fellowship 🏆"
 - id: autodesk-wrap-2026
   date: 2026-08-19
   text: "Finishing up my Autodesk internship."
