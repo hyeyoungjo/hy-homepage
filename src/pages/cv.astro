@@ -562,9 +562,9 @@ const listItems = new Map(
     margin: 2pt 0 12pt;
   }
 
-  /* A collage is never split across pages: it moves whole, with its summary
-     and heading, even if that leaves space at the foot of the page before. */
-  .cv__lead {
+  /* A collage may break between rows, never inside one, so a tall collage
+     does not push its whole section to the next page. */
+  .cv__collage-row {
     break-inside: avoid;
   }
 
