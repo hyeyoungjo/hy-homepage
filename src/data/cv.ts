@@ -28,6 +28,13 @@ export interface CvPublication {
   ref: string;
   /** Overrides the award line, which otherwise comes from the project. */
   note?: string;
+  /** Cites the work at another venue than the project's own, e.g. a demo of
+   *  a full paper; the project's acceptance rate and links, which belong to
+   *  that paper, are then left out. A key of VENUES. */
+  venue?: string;
+  /** What kind of short publication it is, e.g. "poster"; shown after the
+   *  venue's short name. */
+  format?: string;
   /** Other venues the work appeared in without its own publication, e.g. a
    *  demo track; shown after the award. */
   also?: string;
@@ -61,6 +68,10 @@ export const VENUES: Record<string, CvVenue> = {
     acronym: 'UIST',
     suffix: ' Adjunct',
   },
+  'ACM UIST (Demo)': {
+    source: 'Demonstration at the Annual ACM Symposium on User Interface Software and Technology',
+    acronym: 'UIST',
+  },
   'IEEE ISMAR (TVCG)': {
     source: 'IEEE Transactions on Visualization and Computer Graphics',
     publisher: 'IEEE',
@@ -77,7 +88,14 @@ export const VENUES: Record<string, CvVenue> = {
 export type CvSection =
   | { title: string; kind: 'prose'; body: string[]; keywords?: string[] }
   | { title: string; kind: 'entries'; summary?: string; entries: CvEntry[] }
-  | { title: string; kind: 'publications'; summary?: string; items: CvPublication[] }
+  | {
+      title: string;
+      kind: 'publications';
+      summary?: string;
+      /** Teasers in the gutter; on unless false. */
+      thumbnails?: boolean;
+      items: CvPublication[];
+    }
   | {
       title: string;
       kind: 'list';
@@ -281,8 +299,8 @@ export const CV: {
       title: 'Peer-Reviewed Full Papers',
       kind: 'publications',
       items: [
-        { label: 'C7', ref: 'map2video', also: 'Also accepted to the UIST ’26 demo track.' },
-        { label: 'C6', ref: 'cinemaworld', also: 'Also accepted to the UIST ’26 demo track.' },
+        { label: 'C7', ref: 'map2video' },
+        { label: 'C6', ref: 'cinemaworld' },
         { label: 'C5', ref: 'tingletouch' },
         { label: 'J1', ref: 'forearm-gesture' },
         { label: 'C4', ref: 'collagevis' },
@@ -292,10 +310,13 @@ export const CV: {
       ],
     },
     {
-      title: 'Posters',
+      title: 'Posters, Demos, and Workshops',
       kind: 'publications',
+      thumbnails: false,
       items: [
-        { label: 'E1', ref: 'trainertap' },
+        { label: 'E3', ref: 'map2video', venue: 'ACM UIST (Demo)', format: 'demo', also: 'Demo of [C7].' },
+        { label: 'E2', ref: 'world-as-a-canvas', format: 'workshop proposal' },
+        { label: 'E1', ref: 'trainertap', format: 'poster' },
       ],
     },
     {
@@ -389,7 +410,12 @@ export const CV: {
       title: 'Service',
       kind: 'entries',
       entries: [
-        { title: 'External Reviewer', date: '2025 - Present', lines: ['CHI 2025-2027, DIS 2026'] },
+        { title: 'External Reviewer', date: '2025 - 2026', lines: ['CHI 2025-2027, DIS 2026'] },
+        {
+          title: 'Workshop Co-organizer',
+          date: '2026',
+          lines: ['[The World as a Canvas: Materializing Imagination through Prompting the Physical World](https://worldascanvas.github.io/), a full-day workshop at UIST 2026 [E2].'],
+        },
         {
           title: 'Mentor',
           rows: [

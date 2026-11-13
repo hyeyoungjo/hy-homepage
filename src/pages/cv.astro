@@ -85,10 +85,14 @@ async function publication(item: CvPublication) {
 
   // Authors. Title. Source. Publisher, year.
   // then on its own line: (ACRONYM 'yy, acceptance rate) Award (video) (PDF)
-  const v = d.venue ? VENUES[d.venue] : undefined;
-  if (d.venue && !v) throw new Error(`cv: no VENUES entry for "${d.venue}"`);
+  // A different venue (e.g. a demo of a full paper) keeps the paper's
+  // acceptance rate and links off this line.
+  const venue = item.venue ?? d.venue;
+  const own = !item.venue;
+  const v = venue ? VENUES[venue] : undefined;
+  if (venue && !v) throw new Error(`cv: no VENUES entry for "${venue}"`);
   const short = v?.acronym && `**${v.acronym} ’${String(d.year).slice(2)}${v.suffix ?? ''}**`;
-  const detail = [short, d.acceptanceRate && `acceptance rate: ${d.acceptanceRate}`].filter(Boolean).join(', ');
+  const detail = [short, item.format, own && d.acceptanceRate && `acceptance rate: ${d.acceptanceRate}`].filter(Boolean).join(', ');
   const citation = [
     `${authors}.`,
     `**${d.title}**.`,
@@ -99,15 +103,16 @@ async function publication(item: CvPublication) {
     .join(' ');
   const meta = detail && `(${detail})`;
 
-  const links = [
+  const links = !own ? [] : [
     d.links.youtube && { label: 'video', href: d.links.youtube },
     d.links.pdf && { label: 'PDF', href: d.links.pdf },
+    d.links.website && { label: 'website', href: d.links.website },
   ].filter(Boolean) as { label: string; href: string }[];
 
 
   // A small teaser in the gutter, which papers otherwise leave empty; it
   // opens the paper's video, or else its PDF.
-  const thumb = d.teaser && {
+  const thumb = own && d.teaser && {
     src: (await getImage({ src: d.teaser, width: 400, format: 'jpg', quality: 85 })).src,
     href: d.links.youtube ?? d.links.pdf,
   };
@@ -241,11 +246,12 @@ const listItems = new Map(
                 {section.summary && <p class="cv__prose cv__summary" set:html={inline(section.summary)} />}
                 {section.items.map((item) => {
                   const pub = pubs.get(item.label)!;
+                  const thumb = section.thumbnails !== false && pub.thumb;
                   return (
-                    <div class:list={['cv__pub', pub.thumb && 'cv__row']} id={item.label}>
-                      {pub.thumb && (
-                        <a class="cv__gutter cv__pub-thumb" href={pub.thumb.href}>
-                          <img src={pub.thumb.src} alt="" />
+                    <div class:list={['cv__pub', thumb && 'cv__row']} id={item.label}>
+                      {thumb && (
+                        <a class="cv__gutter cv__pub-thumb" href={thumb.href}>
+                          <img src={thumb.src} alt="" />
                         </a>
                       )}
                       <p>
@@ -253,7 +259,7 @@ const listItems = new Map(
                         <br />
                         <Fragment set:html={inline(pub.meta)} />
                         {pub.award && <strong class="cv__pub-award">{pub.award}</strong>}
-                        {pub.also}
+                        {pub.also && <Fragment set:html={inline(pub.also)} />}
                         <Fragment
                           set:html={pub.links.map((l) => `(<a href="${l.href}">${l.label}</a>)`).join(' ')}
                         />
