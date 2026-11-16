@@ -355,8 +355,13 @@ export const CV: {
     {
       title: 'Invited Talks and Lectures',
       kind: 'entries',
-      summary: 'Summary: I gave six talks and guest lectures on AI-assisted video creation, prototyping, and my transition from art and film VFX to immersive media at companies and universities in the U.S. and Korea.',
+      summary: 'Summary: I gave seven talks and guest lectures on AI-assisted video creation, prototyping, and my transition from art and film VFX to immersive media at companies and universities in the U.S. and Korea.',
       entries: [
+        {
+          title: 'From Prompting to Directing, University of Colorado Boulder',
+          date: 'Nov 2026',
+          lines: ['Gave a guest lecture in Prof. Ryo Suzuki’s Generative AI class (ATLS 4519)'],
+        },
         {
           title: 'Understanding Film Directing for AI-Assisted Video Creation, Autodesk Research',
           date: 'Aug 2026',
