@@ -64,12 +64,17 @@ const news = defineCollection({
       date: z.coerce.date(),
       text: z.string(),
       link: z.string().url().optional(),
+      // Optional — the words in `text` that carry the link; without it the whole sentence does.
+      linkText: z.string().optional(),
       // Optional — only when the photo is part of the update, not decoration.
       image: image().optional(),
       images: z.array(image()).optional(),
       imageAlt: z.string().optional(),
       // Org marks sit before the institution name — they never replace the words.
       marks: z.array(z.enum(['autodesk', 'cau', 'cuboulder', 'dexter', 'fujitsu', 'kaist', 'prl', 'snu'])).optional(),
+    })
+    .refine((n) => !n.linkText || (n.link && n.text.includes(n.linkText)), {
+      message: '`linkText` needs a `link` and must appear verbatim in `text`',
     }),
 });
 

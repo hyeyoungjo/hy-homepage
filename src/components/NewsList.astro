@@ -8,6 +8,7 @@ interface NewsItem {
   date: Date;
   text: string;
   link?: string;
+  linkText?: string;
   image?: ImageMetadata;
   images?: ImageMetadata[];
   imageAlt?: string;
@@ -22,6 +23,13 @@ interface Props {
 
 const { items, compact = false } = Astro.props;
 const photos = (n: NewsItem) => n.images ?? (n.image ? [n.image] : []);
+/** Split the sentence around `linkText` so only those words carry the link. */
+const linkSplit = (n: NewsItem) => {
+  const at = n.linkText ? n.text.indexOf(n.linkText) : -1;
+  if (at < 0) return null;
+  const end = at + n.linkText!.length;
+  return { before: n.text.slice(0, at), label: n.linkText!, after: n.text.slice(end) };
+};
 ---
 
 <ul class:list={['news', compact && 'news--compact']}>
@@ -31,7 +39,10 @@ const photos = (n: NewsItem) => n.images ?? (n.image ? [n.image] : []);
         <time class="news__date">{fmtNewsDate(n.date)}</time>
         <div class="news__body">
           <span class="news__text">
-            {n.link ? (
+            {n.link && linkSplit(n) ? (
+              // Kept on one line: line breaks here would render as spaces inside the quotes.
+              <><NewsText text={linkSplit(n)!.before} marks={n.marks} /><a href={n.link} target="_blank" rel="noopener"><NewsText text={linkSplit(n)!.label} marks={n.marks} /></a><NewsText text={linkSplit(n)!.after} marks={n.marks} /></>
+            ) : n.link ? (
               <a href={n.link} target="_blank" rel="noopener">
                 <NewsText text={n.text} marks={n.marks} />
               </a>

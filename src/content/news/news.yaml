@@ -1,5 +1,6 @@
 # Dated updates shown on the home page (newest first is computed automatically).
-# Each item needs a unique `id`. `link`, `image`, `images`, and `marks` are optional.
+# Each item needs a unique `id`. `link`, `linkText`, `image`, `images`, and `marks` are optional.
+# `linkText` limits the link to those words of `text` (e.g. a title); without it the whole sentence links.
 # `marks` sit before the institution name on join and finish/leave only.
 # Lead with a past-tense verb when she did it (Presented, Joined, Received).
 # Papers: write Presented only when she gave the talk (first author, plus TingleTouch).
@@ -8,6 +9,7 @@
   date: 2026-11-20
   text: "Our Meet-Up, \"Rethinking Human Creativity in the Generative AI Era,\" was accepted to CHI 2027! 🎉"
   link: https://rethinking-creativity.github.io/
+  linkText: Rethinking Human Creativity in the Generative AI Era
 - id: girgensohn-fellowship-2026
   date: 2026-11-11
   text: "Received the Girgensohn Family Endowed Graduate Fellowship 🏆"
