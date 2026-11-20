@@ -17,6 +17,7 @@ export const SITE = {
     github: 'https://github.com/hyeyoungjo',
     linkedin: 'https://www.linkedin.com/in/hye-young-jo-2743b189/',
     x: 'https://x.com/heyyoungsoul',
+    imdb: 'https://www.imdb.com/name/nm19141432/',
     instagram: 'https://www.instagram.com/heyyoungsoul/',
   },
 };

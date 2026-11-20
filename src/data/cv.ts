@@ -467,7 +467,7 @@ export const CV: {
       kind: 'list',
       reel: 'https://youtu.be/0x7Rzw4ejqM',
       summary:
-        'Summary: I worked as a visual effects (VFX) compositor on six feature films, three of which each drew over five million viewers in South Korea.',
+        'Summary: I worked as a visual effects (VFX) compositor on six feature films ([IMDb](https://www.imdb.com/name/nm19141432/)), three of which each drew over five million viewers in South Korea.',
       works: [
         'vfx/crowd-extension.jpg',
         'vfx/environment-extension.jpg',
