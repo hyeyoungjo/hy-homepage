@@ -324,6 +324,15 @@ h1, h2, h3 { font-family: var(--font-serif); line-height: 1.18; font-weight: 600
 .socials { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; margin-top: 1rem; }
 .socials a { font-size: 0.95rem; display: inline-flex; align-items: center; gap: 0.35rem; }
 .social__icon { flex: none; }
+/* Phones: icons only, one row; labels stay in the DOM for screen readers. */
+@media (max-width: 520px) {
+  .socials { gap: 0.5rem 1.1rem; }
+  .social__icon { width: 21px; height: 21px; }
+  .socials a span {
+    position: absolute; width: 1px; height: 1px; overflow: hidden;
+    clip: rect(0 0 0 0); white-space: nowrap;
+  }
+}
 
 /* Gallery */
 .gallery__controls { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; margin-bottom: 0.75rem; }
@@ -394,7 +403,12 @@ h1, h2, h3 { font-family: var(--font-serif); line-height: 1.18; font-weight: 600
   .hero__news { width: 100%; }
 }
 @media (max-width: 640px) {
-  .hero__photo img { width: 160px; height: 160px; }
+  /* Phones: a slightly tighter type scale and smaller portrait so the intro fits */
+  body { font-size: 16px; line-height: 1.55; }
+  .hero { gap: 1.25rem; padding-top: 1.25rem; }
+  .hero__photo img { width: 128px; height: 128px; }
+  .hero__tagline { margin-bottom: 0.6rem; }
+  .hero__intro { margin-bottom: 0.8rem; }
   .news__item { flex-direction: column; gap: 0.15rem; }
   .news__date { min-width: 0; }
 
@@ -404,8 +418,8 @@ h1, h2, h3 { font-family: var(--font-serif); line-height: 1.18; font-weight: 600
   .site-nav a { font-size: 0.92rem; padding: 0.5rem 0; }
 
   /* Hero title: scale down so it doesn't dominate small screens */
-  .hero__greeting { font-size: 2.05rem; }
-  .hero__name { font-size: 2.05rem; }
+  .hero__greeting { font-size: 1.8rem; margin-bottom: 0.5rem; }
+  .hero__name { font-size: 1.8rem; }
 
   /* Gallery controls: filters + view on one row, search full-width below */
   .gallery__controls { justify-content: flex-start; gap: 0.6rem; }

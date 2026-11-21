@@ -464,4 +464,9 @@ const now = nowMark();
   /* Entrance: each label fades in when the playhead reaches it */
   .tl.is-armed .tl__box { opacity: 0; transition: opacity 0.4s ease; }
   .tl.is-armed .tl__box.is-in { opacity: 1; }
+
+  /* Phones: the tagline already tells the art → film → HCI arc, and the chart is too cramped */
+  @media (max-width: 640px) {
+    .tl { display: none; }
+  }
 </style>

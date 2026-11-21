@@ -10,7 +10,7 @@ teaserAlt: "Kung Fu Yoga"
 tags: ["VFX", "compositing", "Dexter Studios"]
 links:
   youtube: "https://www.youtube.com/watch?v=LEXz0muRNiY"
-featured: true
+featured: false
 order: 4
 draft: false
 ---

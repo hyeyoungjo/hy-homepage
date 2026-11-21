@@ -75,8 +75,11 @@ const gist = (abstract?: string) => abstract?.split(/(?<=\.)\s/)[0] ?? '';
                       ))}
                     </span>
                   )}
+                  {p.data.venue && row.type !== 'art' && (
+                    <span class="recent__venue">{p.data.venue} · {p.data.year}</span>
+                  )}
                   {p.data.medium && <span class="recent__medium">{p.data.medium}</span>}
-                  <span>{gist(p.data.abstract)}</span>
+                  <span class="recent__gist">{gist(p.data.abstract)}</span>
                 </figcaption>
               </figure>
             ))}
@@ -129,13 +132,28 @@ const gist = (abstract?: string) => abstract?.split(/(?<=\.)\s/)[0] ?? '';
   /* Authors sit between the title and the gist, a step darker than the gist */
   .recent__item figcaption .recent__authors { font-size: 0.8rem; color: var(--color-soft); }
   .recent__authors strong { font-weight: 600; white-space: nowrap; }
+  /* Venue only shows in the phone list layout */
+  .recent__item figcaption .recent__venue { display: none; }
   /* Medium (artwork) reads like a museum label line: italic, before the gist */
   .recent__item figcaption .recent__medium { font-style: italic; color: var(--color-soft); }
 
   @media (max-width: 900px) {
     .recent__row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   }
+  /* Phones: every row reads like a publication list, thumbnail left and
+     title + venue (or medium) right; authors and gist live on the project page. */
   @media (max-width: 520px) {
-    .recent__row { grid-template-columns: minmax(0, 1fr); }
+    .recent__row { grid-template-columns: minmax(0, 1fr); gap: 0.9rem; }
+    .recent__item {
+      display: grid;
+      grid-template-columns: 6.5rem minmax(0, 1fr);
+      gap: 0.85rem;
+      align-items: start;
+    }
+    .recent__item figcaption { margin-top: 0; font-size: 0.88rem; line-height: 1.35; }
+    .recent__item figcaption .recent__authors,
+    .recent__item figcaption .recent__gist { display: none; }
+    .recent__item figcaption .recent__venue,
+    .recent__item figcaption .recent__medium { display: block; font-size: 0.78rem; }
   }
 </style>
