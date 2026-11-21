@@ -345,7 +345,7 @@ export const CV: {
         { title: 'Gary Marsden Travel Award', date: '2024', lines: ['Awarded by ACM SIGCHI to attend CHI 2024 ($3,000).'] },
         {
           title: 'Travel Grants, University of Colorado Boulder',
-          date: '2024 - 2026',
+          date: '2024-2026',
           lines: ['Conference Support Fund, Department of Computer Science ($1,500); Conference Travel Grant, Graduate and Professional Student Government ($500).'],
         },
         { title: 'Best Master’s Thesis Award', date: '2023', lines: ['Awarded to one of two master’s theses in the Department of Industrial Design, KAIST.'] },
@@ -423,7 +423,7 @@ export const CV: {
       title: 'Service',
       kind: 'entries',
       entries: [
-        { title: 'External Reviewer', date: '2025 - 2026', lines: ['CHI 2025-2027, DIS 2026'] },
+        { title: 'External Reviewer', date: '2025-2026', lines: ['CHI 2025-2027, DIS 2026'] },
         { title: 'Workshop and Meet-Up Organizer', date: '2026-2027', lines: ['CHI 2027, UIST 2026'] },
         {
           title: 'Mentor',
