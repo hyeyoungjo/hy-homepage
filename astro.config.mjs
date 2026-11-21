@@ -1,5 +1,6 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
+import remarkRequireAlt from './src/plugins/remark-require-alt.mjs';
 import remarkVideo from './src/plugins/remark-video.mjs';
 import remarkYoutube from './src/plugins/remark-youtube.mjs';
 
@@ -10,7 +11,8 @@ export default defineConfig({
   // not interrupted during development. No `base` needed for an apex domain.
   site: 'https://hyeyoungjo.com',
   markdown: {
+    // Every image needs alt text (the build fails otherwise).
     // Authoring magic: `![](./x.mp4|.gif)` -> <video>; a bare YouTube URL -> embed.
-    remarkPlugins: [remarkVideo, remarkYoutube],
+    remarkPlugins: [remarkRequireAlt, remarkVideo, remarkYoutube],
   },
 });

@@ -55,6 +55,10 @@ const projects = defineCollection({
       order: z.number().int().optional(),
       // Hide from the site without deleting the folder.
       draft: z.boolean().default(false),
+    })
+    // A teaser is the card image everywhere, so it needs its own alt text.
+    .refine((d) => !d.teaser || d.teaserAlt?.trim(), {
+      message: '`teaser` needs a `teaserAlt` describing the image',
     }),
 });
 
@@ -74,6 +78,9 @@ const news = defineCollection({
       imageAlt: z.string().optional(),
       // Org marks sit before the institution name — they never replace the words.
       marks: z.array(z.enum(['autodesk', 'cau', 'cuboulder', 'dexter', 'fujitsu', 'kaist', 'prl', 'snu'])).optional(),
+    })
+    .refine((n) => !(n.image || n.images?.length) || n.imageAlt?.trim(), {
+      message: 'a news photo needs `imageAlt` describing it',
     })
     .refine((n) => !n.linkText || (n.link && n.text.includes(n.linkText)), {
       message: '`linkText` needs a `link` and must appear verbatim in `text`',
