@@ -15,6 +15,8 @@
     Arial, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
   --font-serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
   --section-title: 1.35rem;
+  /* Space between the home page blocks: hero, timeline, selected work */
+  --home-gap: 4.5rem;
   --header-h: 56px;
 }
 
@@ -212,7 +214,7 @@ h1, h2, h3 { font-family: var(--font-serif); line-height: 1.18; font-weight: 600
 .section__head h2 { margin: 0; }
 
 /* Hero */
-.hero { display: grid; grid-template-columns: auto minmax(0, 1fr) 280px; column-gap: 2rem; row-gap: 2.5rem; align-items: start; padding: 3rem 1.25rem 1rem; }
+.hero { display: grid; grid-template-columns: auto minmax(0, 1fr) 280px; column-gap: 2rem; row-gap: 2.5rem; align-items: start; padding: 3rem 1.25rem 0; }
 .hero__news { width: 280px; }
 .hero__news-head { font-size: var(--section-title); margin: 0 0 0.5rem; }
 .hero__news-head a { color: var(--color-fg); }
@@ -397,15 +399,17 @@ h1, h2, h3 { font-family: var(--font-serif); line-height: 1.18; font-weight: 600
 
 /* Mobile */
 @media (max-width: 900px) {
-  .hero { grid-template-columns: 1fr; gap: 1.75rem; padding-top: 2rem; }
+  .hero { --hero-gap: 1.75rem; grid-template-columns: 1fr; gap: var(--hero-gap); padding-top: 2rem; }
   .hero__photo { justify-self: center; }
   .hero__photo img { width: 220px; height: 220px; }
-  .hero__news { width: 100%; }
+  /* Stacked: news is its own block, so it gets the same space as the blocks below */
+  .hero__news { width: 100%; margin-top: calc(var(--home-gap) - var(--hero-gap)); }
 }
 @media (max-width: 640px) {
   /* Phones: a slightly tighter type scale and smaller portrait so the intro fits */
   body { font-size: 16px; line-height: 1.55; }
-  .hero { gap: 1.25rem; padding-top: 1.25rem; }
+  :root { --home-gap: 3.5rem; }
+  .hero { --hero-gap: 1.25rem; padding-top: 1.25rem; }
   .hero__photo img { width: 128px; height: 128px; }
   /* Intro one step below body size so it doesn't fill the first screen; rem keeps user zoom working */
   .hero__tagline { font-size: 0.9375rem; margin-bottom: 0.6rem; }
