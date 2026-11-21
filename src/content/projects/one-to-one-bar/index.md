@@ -36,18 +36,18 @@ rules, painted on the wall behind the bar:
 A small purple room: bottles lit from below, the rules on one wall, and a monitor playing a video of
 the drinks shot from above.
 
-![](./bar.jpg)
+![A small purple room with a black bar of underlit bottles, the recipe rules written in Korean on the left wall, and a monitor showing drinks from above](./bar.jpg)
 
 Each guest sat across from me for one conversation and one drink.
 
-![](./performance-2.jpg)
+![Grid of twenty photos, eighteen guests each seated at the bar facing the camera with their ice-glass cocktail, plus two close-ups of a melting glass](./performance-2.jpg)
 
 The glasses were made of ice, so every portrait started melting the moment it was poured.
 
-![](./ice-glass.jpg)
+![Four rough-edged glasses carved from ice on a tray, one holding a red cocktail, with pink meltwater spreading around them](./ice-glass.jpg)
 
 ## After
 
 By the end of the night every portrait had melted, each into its own puddle of color.
 
-![](./melted.jpg)
+![Overhead views of the bar top, each showing two melted ice glasses ringed by a puddle of mixed color, blue, green, red, and violet](./melted.jpg)

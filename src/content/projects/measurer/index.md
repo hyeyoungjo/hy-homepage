@@ -27,5 +27,5 @@ displays.
 
 The video above and the images below are from *Measurer*, my entry in the race.
 
-![](./image-01.png)
-![](./image-02.png)
+![Black-and-white close-up of an eye struggling to open](./image-01.png)
+![Frame from a video in which the distance on a green highway sign keeps changing, here reading "EXIT 178.05 km", set against a glass office tower](./image-02.png)

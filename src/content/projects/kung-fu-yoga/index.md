@@ -26,4 +26,4 @@ I joined the post-production as a **VFX compositor** at **Dexter Studios**.
 An archaeology professor teams up with an Indian scholar to trace a lost Magadha treasure, a hunt that
 runs from a Tibetan ice cave to Dubai and India.
 
-![](./still.jpg)
+![Theatrical poster for Kung Fu Yoga, two young men on the roof of an SUV racing across desert dunes while the startled driver sits beside a roaring lion](./still.jpg)

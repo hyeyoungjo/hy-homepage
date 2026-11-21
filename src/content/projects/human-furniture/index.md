@@ -27,11 +27,11 @@ figure eats, slumps, and waits: dull, and seemingly without purpose.
 
 ![Human-furniture, single-channel video](./human-furniture.mp4)
 
-![](./mannequin-1.gif)
-![](./mannequin-2.gif)
-![](./eating-crying.gif)
-![](./eating-dull.gif)
+![Footage of a bed and a clothes drying rack projected onto a white-clad figure, so the body takes the furniture's place](./mannequin-1.gif)
+![Projected scenes onto a white figure, a hand winding a wall clock and a person reclining on a folding chair while drinking](./mannequin-2.gif)
+![Extreme close-up of a blurred mouth slowly opening and closing](./eating-crying.gif)
+![Overhead view of a hand spooning cereal from a polka-dot plate of milk, the pieces arranged into a diamond in between](./eating-dull.gif)
 
-![](./shot-1.jpg)
-![](./shot-2.jpg)
-![](./trial.jpg)
+![Installation sketch drawn in pen on the back of a hand, with stairs, a chair, a monitor and measurements](./shot-1.jpg)
+![Projection screen in a dim exhibition space under setup, showing a figure merged with a chair in a cluttered room](./shot-2.jpg)
+![Test shot of a person in red curled on the floor of a cluttered studio among boxes, fans and bubble wrap, lit orange](./trial.jpg)

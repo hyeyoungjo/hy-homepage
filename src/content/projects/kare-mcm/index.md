@@ -22,9 +22,9 @@ negative-pressure ward with advanced medical facilities, developed to respond to
 outbreaks. I was a junior researcher on the team led by Prof. Tek-Jin Nam, where I designed the
 **information architecture of the control interface**.
 
-![](./mcm-1.png)
-![](./mcm-2.png)
-![](./mcm-3.png)
+![Project board titled "Mobile & expandable negative pressure ward" with a worker in a protective suit pointing at a ward door's wall-mounted control display](./mcm-1.png)
+![Design process board with four black-and-white photos, workshops with nurses and doctors, sketched UI layouts, and a 1,1 ward prototype being tested](./mcm-2.png)
+![Diagram of KARE MCM value keywords, functional aims such as error prevention and usability on the left, social effects such as staff efficiency on the right](./mcm-3.png)
 
 *A collaboration across KAIST, UNIST, TU Korea, Zoslee Studio, K-Arts, 20PLUS, and Inition.*
 

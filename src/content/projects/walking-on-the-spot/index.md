@@ -29,11 +29,11 @@ I built a wearable harness: leather straps run from a waist belt down to the fee
 foot pulls the other back. The wearer can keep walking, but only in place. The body performs the full
 motion of moving forward while the ground never changes, a kind of exhaustion without distance.
 
-![](./walking.gif)
-![](./trapped.gif)
+![Overhead view of a person in black walking across a bare concrete floor](./walking.gif)
+![Vertical screen against a gallery wall showing close-up feet in laced boots stepping over and over](./trapped.gif)
 
 ## Making
 
-![](./test.gif)
-![](./detail.jpg)
-![](./install.jpg)
+![Test run in a basement, a remote camera streams the walker's feet in real time to a monitor laid flat on foam blocks](./test.gif)
+![Blue-tinted close-up of a laced boot with a strap wrapped around the ankle](./detail.jpg)
+![In a dark gallery a visitor wearing the belt harness faces a glowing screen of two shoe soles, photos on the wall](./install.jpg)

@@ -19,7 +19,7 @@ draft: false
 *Chameleon* came out of a material exploration in **KAIST ID506 Media Interaction Design**
 (Prof. Woohun Lee), built around polarizing film.
 
-![](./chameleon-1.jpg)
+![Two clear acrylic gear modules, each with a round window of layered films glowing in iridescent pink, yellow, and blue](./chameleon-1.jpg)
 
 Polarizing film is popular with makers for its almost magical trick: transparent sheets that turn a
 view black as they rotate. Earlier works drew striking visual impact from it, but mostly stopped at
@@ -31,4 +31,4 @@ through the polarization and refraction of polarizing and OPP film. Treating the
 range and varied shapes as the basis for control, I built a layered gear mechanism, a module that can
 be repeated and recombined into many different graphics.
 
-![](./chameleon-2.jpg)
+![Three annotated photos, four modules spelling "Cha", "Mel", "Le", "On", the polarizing filters and OPP films, and arrows showing the gears rotating](./chameleon-2.jpg)

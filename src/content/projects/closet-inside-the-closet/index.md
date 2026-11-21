@@ -31,9 +31,9 @@ heterosexual, one as homosexual, one as bisexual. The rooms are separated by doo
 both directions, so you can walk straight through from one identity into another: every closet is
 connected to the rest.
 
-![](./structure.png)
-![](./install-1.jpg)
-![](./install-2.jpg)
+![Plan diagram of the structure, three adjoining rooms in blue, gray and red inside a black outline](./structure.png)
+![Plywood structure built into a doorway, a corridor of three rooms seen straight through its open doors](./install-1.jpg)
+![Plywood panels and hinged door frames for the structure leaning against a hallway window during construction](./install-2.jpg)
 
 ## One body, every look
 
@@ -43,6 +43,6 @@ room; a blended look in the bisexual room. In reality my own wardrobe isn't sort
 all of it. Standing in a single white jumpsuit, I can be all three at once, which is the point:
 identity isn't fixed, it's fluid.
 
-![](./look-1.jpg)
-![](./look-2.jpg)
-![](./look-3.jpg)
+![3D rendering of a white closet with its door open, revealing another door inside](./look-1.jpg)
+![Wooden scale model of a tall closet with double doors open onto a second set of doors inside](./look-2.jpg)
+![Three views of a balsa model, open doors leading through nested closets and the full front with doors swung out](./look-3.jpg)

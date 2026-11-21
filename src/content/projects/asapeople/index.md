@@ -15,7 +15,7 @@ draft: false
 
 *ASAPeople* is an exploration of "hot ice": sodium acetate.
 
-![](./asapeople.jpg)
+![Two small white crystal sculptures, lumpy figure-like columns of hot ice, standing in front of a steel ruler](./asapeople.jpg)
 
 ## The material
 
@@ -32,6 +32,6 @@ solution for the next attempt. Building on top of existing sculptures, or joinin
 liquid, could be just as interesting. The real challenge is control: getting the solubility right and
 keeping the syringe from clogging.
 
-![](./syringe-test.jpg)
+![Four thin hot ice columns lined up before a ruler, alternating with the syringe nozzles of different sizes used to print them](./syringe-test.jpg)
 
 *Thickness test: 25 mm height, different nozzle sizes.*

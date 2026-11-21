@@ -42,19 +42,19 @@ practice.
 
 **① Real-time lecture with multiple users:** a shared virtual classroom for live teaching.
 
-![](./scenario-lecture.gif)
+![An avatar instructor explains gears to students in a virtual lab as large 3D gears animate in mid-air](./scenario-lecture.gif)
 
 **② 3D component library:** browse and inspect electronic parts in 3D.
 
-![](./scenario-library.gif)
+![A headset user points a controller at a floating panel to browse 3D electronic parts and read a DC motor's specs](./scenario-library.gif)
 
 **③ Circuit assembly:** build circuits hands-on without the risk of damaging real hardware.
 
-![](./scenario-circuit.gif)
+![In VR, a user wires a resistor and other parts with glowing lines while following a circuit diagram on a board](./scenario-circuit.gif)
 
 **④ Augmented breadboard:** overlay guidance onto the breadboard for mixed-reality practice.
 
-![](./scenario-breadboard.gif)
+![A virtual breadboard diagram wires a button and LED while a camera feed shows a real board's LED lighting up](./scenario-breadboard.gif)
 
 *In collaboration with the KAIST Global Strategy Institute.*
 

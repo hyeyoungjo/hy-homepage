@@ -28,4 +28,4 @@ compositor** on the team led by VFX supervisor Jong-Hyun Jin at **Dexter Studios
 While defending an unlikely soul, the afterlife Guardians look into an elderly man who has outstayed
 his time on Earth, and into their own pasts.
 
-![](./still.jpg)
+![Theatrical poster for Along with the Gods, The Last 49 Days, five figures in dark clothes walk across glowing lava under a purple sky, the brush-stroke Korean title below](./still.jpg)

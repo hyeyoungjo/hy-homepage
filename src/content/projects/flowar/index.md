@@ -74,20 +74,20 @@ two dynamic.
 
 **① Front:** a typical video-in-front layout (baseline).
 
-![](./layout-front.gif)
+![A user in a headset and motion-capture suit does yoga while the instructor video stays on one fixed screen in front](./layout-front.gif)
 
 **② Circular:** screens around the user, viewed selectively by posture.
 
-![](./layout-circular.gif)
+![Copies of the instructor video surround the user in a ring, so one stays in view as they turn through poses](./layout-circular.gif)
 
 **③ User-anchored:** the screen follows the user's gaze like a head-up display.
 
-![](./layout-user-anchored.gif)
+![The video screen is tied to the user's head and follows their gaze as they bend and stretch](./layout-user-anchored.gif)
 
 **④ Trainer-anchored:** the screen sits where the virtual trainer is looking. The trainer can come
 from motion capture *or* from AI pose estimation on an ordinary video.
 
-![](./layout-trainer-anchored.gif)
+![A virtual trainer moves with the user, and the video screen appears where the trainer is looking](./layout-trainer-anchored.gif)
 
 ## Two studies
 

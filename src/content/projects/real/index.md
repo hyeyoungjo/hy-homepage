@@ -25,4 +25,4 @@ the casino as his own. At the same time he is fighting another personality insid
 treatment meant to erase it brings out a mysterious investor with his name and his face. What follows
 is a battle between the real and the fake Jang Tae-yeong.
 
-![](./still.jpg)
+![Theatrical poster for Real, a man in a dark suit shouting mid-fight on a blue background, with the Korean title 리얼 in white below](./still.jpg)

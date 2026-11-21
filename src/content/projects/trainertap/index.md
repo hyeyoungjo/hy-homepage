@@ -79,7 +79,7 @@ then does three warm-up reps so the detector can calibrate their range of motion
 the lift and signals each vibration device, which buzzes in different patterns to cue *which* muscle to
 use and *when*, while the app counts reps, guides breathing, and encourages.
 
-![](./system.png)
+![A hand holding a phone with the TrainerTap app open, choosing among squat, bench press, and deadlift](./system.png)
 
 ## The big three lifts
 
@@ -87,5 +87,5 @@ The first prototype supports the big-three lifts, with four vibration devices gi
 primary and secondary muscles. We designed the vibration patterns together with three experienced
 trainers.
 
-![](./big-three.png)
+![Illustrations of the squat, bench press, and deadlift with primary muscles in blue and secondary in orange, above timelines of gentle and strong taps](./big-three.png)
 

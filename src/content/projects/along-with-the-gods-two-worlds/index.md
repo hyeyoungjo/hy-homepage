@@ -28,4 +28,4 @@ supervisor Jong-Hyun Jin at **Dexter Studios**.
 A firefighter dies and arrives in the afterlife, where Guardians lead him through seven trials and a
 perilous journey across different hells.
 
-![](./still.jpg)
+![Theatrical poster for Along with the Gods, The Two Worlds, three Guardians in long dark coats and a firefighter stand under a stormy sky above the brush-stroke Korean title](./still.jpg)

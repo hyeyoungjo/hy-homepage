@@ -38,9 +38,9 @@ minimizing VR motion sickness.
 I joined as a VR artist on episodes 2-6, working across the art pipeline: concept and modeling,
 texturing and look development, lighting, materials and effects, level optimization, and animated UI.
 
-![](./c1.png)
-![](./c3.png)
-![](./c5.png)
-![](./c7.png)
-![](./c9.png)
-![](./gearvrmockup.png)
+![Concept art, rotting fish creature sketches and color studies beside a gray sketch of a crowd walking past fish-zombie tanks](./c1.png)
+![Textured 3D models of a mutant fish and a raincoat, and the fish creatures placed in a rainy street level](./c3.png)
+![Level optimization in Unreal, lightmap density and profiling views beside a dark hospital waiting room with a wheelchair](./c5.png)
+![Rainy street scenes with puddle reflections, plus the Unreal material graphs used for puddles and rain on windows](./c7.png)
+![Color grading, a color wheel, scopes, and a lookup table, with before-and-after frames of dark, rainy story scenes](./c9.png)
+![Inside view of a VR headset, showing its two lenses](./gearvrmockup.png)

@@ -28,18 +28,18 @@ and blood-pressure changes, higher skin-cancer risk, reduced memory).
 
 ## Concept
 
-![](./a1.png)
-![](./a2.png)
+![Research slide on why fall prevention matters, 25% of older adults fall each year, and falls cause 13% of their deaths](./a1.png)
+![Research slide on why a UV function matters, older adults struggle to tell skin cancers apart from common age spots](./a2.png)
 
 ## Function modules
 
-![](./f0.png)
-![](./f1.png)
-![](./modeling.png)
+![Unreal Engine Blueprint graph for the showroom logic, with groups for scene changes, camera fades, line tracing, and UI pop-ups](./f0.png)
+![Concept sketch of the showroom, a jacket on a stand under a tree, with a panel for choosing sleeve color and adding sensor functions](./f1.png)
+![Maya screenshot of the low-poly jacket model with color-coded parts beside its unwrapped UV layout](./modeling.png)
 
 ## VR show room
 
-![](./render1.png)
-![](./render2.png)
-![](./infowall1.jpg)
+![VR showroom render, a jacket on a mannequin beneath a large tree, ringed by glowing walls of design sketches and text](./render1.png)
+![High-angle view of the VR showroom, tree, jacket mannequin, and glowing panels labeling each function module](./render2.png)
+![Info wall titled "Mass Customization Tool Kit", front and back jacket outlines labeled with sensor and heating units](./infowall1.jpg)
 ![Rotator](./rotator.gif)

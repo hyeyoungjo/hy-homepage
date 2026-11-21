@@ -30,4 +30,4 @@ interrogation involving torture. Officials rush to cover up the death and order 
 prosecutor meant to sign the cremation release questions how a 21-year-old could die of a heart attack,
 and begins pulling at the truth.
 
-![](./still.jpg)
+![Theatrical poster for 1987, When the Day Comes, six tense faces in vertical strips above a huge cracked "1987" and a crowd of protesters](./still.jpg)

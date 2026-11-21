@@ -70,7 +70,7 @@ haptic illusion of a single connected object. Each handle mechanically bends, tw
 those kinesthetic deformations of the skin make both hands feel one coordinated motion, a virtual
 bond.
 
-![](./system.gif)
+![Clip of a VR user swinging two controllers joined by a virtual band, then close-ups of a controller handle stretching and bending up to 30 degrees](./system.gif)
 
 ## Applications
 
@@ -78,5 +78,5 @@ By rendering different grip deformations, the controllers can simulate a range o
 two-handed experiences: a jumping rope, the illusion of force, and various rigid grip shapes. A user
 study showed GamesBond increased the realism, immersion, and enjoyment of bimanual interaction.
 
-![](./application.gif)
+![Clip of applications, two VR users turning a jumping rope, a fishing net with a fish shifting its weight, and a user gripping virtual power tools](./application.gif)
 

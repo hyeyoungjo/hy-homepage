@@ -25,4 +25,4 @@ An unemployed young man who spends his days as the leader of an online game team
 murder he did not commit. After escaping prison, he and his gaming teammates set out to uncover who
 fabricated the case against him.
 
-![](./still.jpg)
+![Theatrical poster for Fabricated City, a young man in a leather jacket stands before four teammates and a wrecked car, a hazy skyline and helicopters behind](./still.jpg)

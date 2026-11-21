@@ -27,15 +27,15 @@ Each painting is a fragment of the body, yet through numbering and arrangement t
 imagined. I place a film mount against the subject's body and trace its frame with a pen, then draw
 that part at the same scale.
 
-![](./sampling-neck2.jpg)
+![Small rectangles traced in pen on a person's neck and collarbone, marking the parts to be painted](./sampling-neck2.jpg)
 
 To give the sensation of transferring the very skin I was watching, I worked on translucent tracing
 paper and painted in thin, lightly layered watercolor.
 
 ## Composing the fragments
 
-![](./composition-1.jpg)
-![](./composition-2.jpg)
-![](./composition-3.jpg)
-![](./composition-4.jpg)
-![](./composition-5.jpg)
+![Small framed watercolors of skin scattered down a tall white wall, from a cluster at the top to a few near the floor](./composition-1.jpg)
+![Seven pinkish skin paintings in slide-like mounts, each with a handwritten number and body-part label in Korean](./composition-2.jpg)
+![Three reddish skin paintings low on the wall just above the black baseboard, labeled as parts of the left foot](./composition-3.jpg)
+![A visitor bends close to the wall to look at the small skin paintings scattered across it](./composition-4.jpg)
+![Two people lean in toward the scattered paintings, one standing close, one crouching low](./composition-5.jpg)

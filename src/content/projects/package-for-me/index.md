@@ -33,9 +33,9 @@ These imaginings remind me of a magician's assistant placed in a box and run thr
 box then pulled apart, even though magician and assistant are one and the same. The dismembered body
 looks incapable of anything, yet in the act of imagining it apart, a kind of magic is handed to me.
 
-![](./scene.gif)
-![](./drop-scenery.gif)
+![Video mapped onto a wall of cardboard boxes, each box showing a separate body part like a leg, hand or face](./scene.gif)
+![Shaky upward-looking footage moving from a rooftop sky down through stairwells, ceiling lights and elevator doors](./drop-scenery.gif)
 
-![](./install-1.jpg)
-![](./install-2.jpg)
-![](./install-3.jpg)
+![Projector and laptop on the floor lighting a stack of open cardboard boxes during setup](./install-1.jpg)
+![Wall of sealed cardboard boxes stacked eight high in an empty gallery, a video camera on a tripod in front](./install-2.jpg)
+![Uneven piles of cardboard boxes in a gallery corner, washed in blue projector light](./install-3.jpg)
