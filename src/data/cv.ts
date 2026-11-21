@@ -320,7 +320,8 @@ export const CV: {
       kind: 'publications',
       thumbnails: false,
       items: [
-        { label: 'E4', ref: 'rethinking-creativity', format: 'meet-up proposal' },
+        { label: 'E5', ref: 'rethinking-creativity', format: 'meet-up proposal' },
+        { label: 'E4', ref: 'human-cat-meetup', format: 'meet-up proposal' },
         { label: 'E3', ref: 'map2video', venue: 'ACM UIST (Demo)', format: 'demo', also: 'Demo of [C7].' },
         { label: 'E2', ref: 'world-as-a-canvas', format: 'workshop proposal' },
         { label: 'E1', ref: 'trainertap', format: 'poster' },
@@ -423,16 +424,7 @@ export const CV: {
       kind: 'entries',
       entries: [
         { title: 'External Reviewer', date: '2025 - 2026', lines: ['CHI 2025-2027, DIS 2026'] },
-        {
-          title: 'Meet-Up Lead Organizer',
-          date: '2027',
-          lines: ['[Rethinking Human Creativity in the Generative AI Era](https://rethinking-creativity.github.io/), a 90-minute meet-up at CHI 2027 [E4].'],
-        },
-        {
-          title: 'Workshop Co-organizer',
-          date: '2026',
-          lines: ['[The World as a Canvas: Materializing Imagination through Prompting the Physical World](https://worldascanvas.github.io/), a full-day workshop at UIST 2026 [E2].'],
-        },
+        { title: 'Workshop and Meet-Up Organizer', date: '2026-2027', lines: ['CHI 2027, UIST 2026'] },
         {
           title: 'Mentor',
           rows: [

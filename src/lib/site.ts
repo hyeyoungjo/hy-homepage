@@ -49,9 +49,10 @@ type Dated = { id: string; data: { year: number; date?: Date } };
 // Projects without an exact date count as January 1 of their year.
 export const projectTime = (p: Dated) => +(p.data.date ?? new Date(p.data.year, 0, 1));
 
-// Map2Video and CinemaWorld share the same UIST 2026 date. Map2Video is the
-// later paper, so it always sorts first when the clock cannot tell them apart.
-const NEWER: Record<string, number> = { map2video: 1 };
+// Tie-breaks for entries that share a date, so the one to lead with sorts first:
+// Map2Video over CinemaWorld (UIST 2026), and the meet-up she led over the
+// Human-CAT meet-up she co-organized (CHI 2027).
+const NEWER: Record<string, number> = { map2video: 1, 'rethinking-creativity': 1 };
 
 export const byNewest = (a: Dated, b: Dated) =>
   b.data.year - a.data.year || projectTime(b) - projectTime(a) || (NEWER[b.id] ?? 0) - (NEWER[a.id] ?? 0);
