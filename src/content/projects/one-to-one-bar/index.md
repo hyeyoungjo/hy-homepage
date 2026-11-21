@@ -4,6 +4,7 @@ type: "art"
 year: 2014
 authors: ["Hye-Young Jo"]
 venue: "The Great Exodus (graduation exhibition)"
+medium: "Live performance"
 abstract: "A bar for one guest at a time: I talk with an invited fellow artist, then mix a cocktail that works as their portrait, with color, scent, and taste read from who they are. Live performance with ice glasses, shown at The Great Exodus, my painting graduation exhibition."
 teaser: ./teaser.jpg
 teaserAlt: "Hye-Young mixing a cocktail at the 1:1 Bar"

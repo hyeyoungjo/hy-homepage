@@ -75,6 +75,7 @@ const gist = (abstract?: string) => abstract?.split(/(?<=\.)\s/)[0] ?? '';
                       ))}
                     </span>
                   )}
+                  {p.data.medium && <span class="recent__medium">{p.data.medium}</span>}
                   <span>{gist(p.data.abstract)}</span>
                 </figcaption>
               </figure>
@@ -128,6 +129,8 @@ const gist = (abstract?: string) => abstract?.split(/(?<=\.)\s/)[0] ?? '';
   /* Authors sit between the title and the gist, a step darker than the gist */
   .recent__item figcaption .recent__authors { font-size: 0.8rem; color: var(--color-soft); }
   .recent__authors strong { font-weight: 600; white-space: nowrap; }
+  /* Medium (artwork) reads like a museum label line: italic, before the gist */
+  .recent__item figcaption .recent__medium { font-style: italic; color: var(--color-soft); }
 
   @media (max-width: 900px) {
     .recent__row { grid-template-columns: repeat(2, minmax(0, 1fr)); }

@@ -4,7 +4,8 @@ type: "art"
 year: 2015
 authors: ["Hye-Young Jo"]
 venue: "Dirt Luv (graduation exhibition)"
-abstract: "A wearable harness that ties the waist to the feet so that lifting one foot pulls the other back: the wearer can keep walking, but only in place. Shown at Dirt Luv, my media art graduation exhibition."
+medium: "Wearable installation"
+abstract: "A wearable harness that lets the wearer keep walking but only in place, because lifting one foot pulls the other back. Shown at Dirt Luv, my media art graduation exhibition."
 teaser: ./teaser.jpg
 teaserAlt: "Walking on the Spot wearable device"
 tags: ["wearable", "device", "body"]
@@ -26,7 +27,7 @@ I started.
 
 I built a wearable harness: leather straps run from a waist belt down to the feet, so that lifting one
 foot pulls the other back. The wearer can keep walking, but only in place. The body performs the full
-motion of moving forward while the ground never changes: exhaustion without distance.
+motion of moving forward while the ground never changes, a kind of exhaustion without distance.
 
 ![](./walking.gif)
 ![](./trapped.gif)

@@ -17,6 +17,8 @@ const projects = defineCollection({
       authors: z.array(z.string()).default([]),
       venue: z.string().optional(),
       abstract: z.string().optional(),
+      // Medium, shown before the abstract on the home page (e.g. "Acrylic painting on paper").
+      medium: z.string().optional(),
       // Co-located image (e.g. ./teaser.png) — auto-optimized because it lives under src/.
       teaser: image().optional(),
       teaserAlt: z.string().optional(),

@@ -436,11 +436,11 @@ export const CV: {
         {
           title: 'Mentor',
           rows: [
+            { text: 'University of Colorado Boulder Prospect Affiliate Match Program, helping prospective students prepare their PhD applications', date: '2025-Current' },
             {
               text: 'Undergraduate research mentoring for Chan Hu Wie, Yejin Jang, Dong-Uk Kim, and Yurim Son (Chung-Ang University), guiding them through designing, building, and evaluating wearable haptic systems that recreate a personal trainer’s touch, leading to a UIST poster [E1] and a CHI paper [C5]',
               date: 'Spring 2024',
             },
-            { text: 'University of Colorado Boulder Prospect Affiliate Match Program, helping prospective students prepare their PhD applications', date: '2025-2026' },
             { text: 'Seoul National University Mentoring Program, helping international students adjust to campus life', date: '2012' },
           ],
         },
