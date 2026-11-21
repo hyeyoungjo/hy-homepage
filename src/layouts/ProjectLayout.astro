@@ -55,3 +55,29 @@ const d = project.data;
     <slot />
   </div>
 </article>
+
+<script>
+  // Looping clips: one pause/play button each, and no autoplay for people who
+  // ask their system for reduced motion.
+  const PAUSE = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>';
+  const PLAY = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4l13 8-13 8z"/></svg>';
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  document.querySelectorAll<HTMLButtonElement>('[data-loop-toggle]').forEach((btn) => {
+    const video = btn.parentElement?.querySelector('video');
+    if (!video) return;
+    const sync = () => {
+      const playing = !video.paused;
+      btn.innerHTML = playing ? PAUSE : PLAY;
+      btn.setAttribute('aria-label', playing ? 'Pause animation' : 'Play animation');
+    };
+    if (reduce) {
+      video.removeAttribute('autoplay');
+      video.pause();
+    }
+    btn.addEventListener('click', () => (video.paused ? video.play() : video.pause()));
+    video.addEventListener('play', sync);
+    video.addEventListener('pause', sync);
+    sync();
+  });
+</script>

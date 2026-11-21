@@ -11,9 +11,16 @@ function makeVideo(node, slug) {
   const src = `/p/${slug}/${base}.${ext}`;
   const isGif = /\.gif$/i.test(node.url); // looping silent clips
   const attrs = isGif
-    ? 'autoplay muted loop playsinline'
+    ? 'autoplay muted loop playsinline data-loop'
     : 'controls muted playsinline preload="metadata"';
-  const value = `<figure class="md-video"><video ${attrs} src="${src}"></video></figure>`;
+  // The markdown alt text becomes the video's accessible name.
+  const alt = (node.alt || '').replace(/&/g, '&amp;').replace(/"/g, '&quot;');
+  const label = alt ? ` aria-label="${alt}"` : '';
+  // Looping clips must be pausable (WCAG 2.2.2); the script in ProjectLayout wires the button.
+  const toggle = isGif
+    ? '<button type="button" class="md-video__toggle" aria-label="Pause animation" data-loop-toggle></button>'
+    : '';
+  const value = `<figure class="md-video"><video ${attrs}${label} src="${src}"></video>${toggle}</figure>`;
   return { type: 'html', value };
 }
 

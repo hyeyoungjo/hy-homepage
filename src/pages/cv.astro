@@ -115,6 +115,8 @@ async function publication(item: CvPublication) {
   const thumb = own && d.teaser && {
     src: (await getImage({ src: d.teaser, width: 400, format: 'jpg', quality: 85 })).src,
     href: d.links.youtube ?? d.links.pdf,
+    // The image link's accessible name: where it goes, not what it shows.
+    label: `${d.title} (${d.links.youtube ? 'video' : 'PDF'})`,
   };
 
   return {
@@ -145,11 +147,11 @@ async function collageWorks(slugs: string[] = []) {
         const src = assets[`../assets/cv/${slug}`]?.default;
         if (!src) throw new Error(`cv: no image src/assets/cv/${slug}`);
         const area = slug.split('/').pop()!.replace(/\.[^.]+$/, '');
-        return { area, ...(await collageImage(src)), caption: undefined as string | undefined, video: undefined as string | undefined };
+        return { area, title: area.replace(/-/g, ' '), ...(await collageImage(src)), caption: undefined as string | undefined, video: undefined as string | undefined };
       }
       const d = bySlug.get(slug)?.data;
       if (!d?.teaser) throw new Error(`cv: no teaser for project "${slug}"`);
-      return { area: slug, ...(await collageImage(d.teaser)), caption: undefined as string | undefined, video: d.links.youtube };
+      return { area: slug, title: d.title, ...(await collageImage(d.teaser)), caption: undefined as string | undefined, video: d.links.youtube };
     }),
   );
 }
@@ -250,7 +252,7 @@ const listItems = new Map(
                   return (
                     <div class:list={['cv__pub', thumb && 'cv__row']} id={item.label}>
                       {thumb && (
-                        <a class="cv__gutter cv__pub-thumb" href={thumb.href}>
+                        <a class="cv__gutter cv__pub-thumb" href={thumb.href} aria-label={thumb.label}>
                           <img src={thumb.src} alt="" />
                         </a>
                       )}
@@ -333,7 +335,7 @@ const listItems = new Map(
                                     const caption = section.captions?.[t.area] ?? t.caption;
                                     return (
                                       <a class="cv__tile" href={t.video ?? `${SITE}${t.src}`} style={`height: ${(freeH * (1 / t.aspect)) / inv}pt`}>
-                                        <img src={t.src} alt="" />
+                                        <img src={t.src} alt={caption ? '' : t.title} />
                                         {caption && <span>{caption}</span>}
                                       </a>
                                     );
@@ -627,6 +629,72 @@ const listItems = new Map(
 
   .cv__group {
     margin-bottom: 6pt;
+  }
+
+  /* Screens only (the PDF is unaffected): contact links get a 24px-tall
+     touch target (WCAG 2.5.8). */
+  @media screen {
+    .cv__contact a {
+      display: inline-block;
+      padding: 4.5px 0;
+    }
+  }
+
+  /* Narrow screens and high zoom: the letter-size page reflows into one
+     column so nothing scrolls sideways (WCAG 1.4.10). */
+  @media screen and (max-width: 820px) {
+    body {
+      font-size: 15px;
+      line-height: 1.4;
+    }
+    .cv {
+      width: auto;
+      margin: 0;
+      padding: 1.25rem 1rem 2rem;
+      box-shadow: none;
+    }
+    .cv__contact {
+      flex-direction: column;
+      gap: 0;
+    }
+    .cv__contact-right {
+      text-align: left;
+    }
+    .cv .cv__prose {
+      text-align: left;
+    }
+    .cv .cv__row {
+      grid-template-columns: minmax(0, 1fr);
+      margin-left: 0;
+    }
+    .cv__gutter {
+      text-align: left;
+    }
+    .cv__date span {
+      display: inline;
+    }
+    .cv__date span + span::before {
+      content: ' ';
+    }
+    .cv__pub-thumb {
+      width: 6rem;
+      margin-bottom: 0.4rem;
+    }
+    .cv__collage-row {
+      height: auto !important;
+      flex-direction: column;
+    }
+    .cv__collage-col {
+      width: 100% !important;
+    }
+    .cv a.cv__tile,
+    .cv__tile {
+      height: auto !important;
+    }
+    .cv__tile img {
+      position: static;
+      height: auto;
+    }
   }
 
   @media print {

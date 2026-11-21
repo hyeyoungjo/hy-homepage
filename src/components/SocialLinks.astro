@@ -53,7 +53,7 @@ const links = [
           aria-hidden="true"
           set:html={l.icon}
         />
-        <span>{l.label}</span>
+        <span aria-live={l.copy ? 'polite' : undefined}>{l.label}</span>
       </a>
     ))
   }
