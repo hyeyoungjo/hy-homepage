@@ -407,8 +407,9 @@ h1, h2, h3 { font-family: var(--font-serif); line-height: 1.18; font-weight: 600
   body { font-size: 16px; line-height: 1.55; }
   .hero { gap: 1.25rem; padding-top: 1.25rem; }
   .hero__photo img { width: 128px; height: 128px; }
-  .hero__tagline { margin-bottom: 0.6rem; }
-  .hero__intro { margin-bottom: 0.8rem; }
+  /* Intro one step below body size so it doesn't fill the first screen; rem keeps user zoom working */
+  .hero__tagline { font-size: 0.9375rem; margin-bottom: 0.6rem; }
+  .hero__intro { font-size: 0.9375rem; margin-bottom: 0.8rem; }
   .news__item { flex-direction: column; gap: 0.15rem; }
   .news__date { min-width: 0; }
 
