@@ -36,11 +36,13 @@ const d = project.data;
       d.venue && (
         <p class="project__venue">
           {d.venue}
+          {d.role ? ` · ${d.role}` : ''}
           {d.acceptanceRate ? ` · Acceptance ${d.acceptanceRate}` : ''}
         </p>
       )
     }
     {d.award && <p class="project__award">{d.award}</p>}
+    {d.viewers && <p class="project__venue">{d.viewers}</p>}
     <LinkRow links={d.links} originalLink={d.originalLink} hasExtra={Boolean(d.bibtex)}>
       <CiteBlock bibtex={d.bibtex} endnote={d.endnote} acmref={d.acmref} />
     </LinkRow>

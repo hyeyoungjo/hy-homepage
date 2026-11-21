@@ -4,6 +4,8 @@ type: "film"
 year: 2017
 authors: []
 venue: "Dexter Studios"
+role: "VFX compositor"
+viewers: "Over 2.5 million viewers in South Korea"
 abstract: "A South Korean crime action film directed by Kwang-Hyun Park. I worked on the post-production as a VFX compositor at Dexter Studios."
 teaser: ./still.jpg
 teaserAlt: "Fabricated City"

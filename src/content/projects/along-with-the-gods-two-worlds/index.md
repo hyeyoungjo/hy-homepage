@@ -4,14 +4,16 @@ type: "film"
 year: 2017
 authors: []
 venue: "Dexter Studios"
+role: "VFX compositor"
 abstract: "A South Korean fantasy-action film based on the webtoon by Ho-Min Joo. I worked on the post-production as a VFX compositor at Dexter Studios."
 teaser: ./still.jpg
 teaserAlt: "Along with the Gods: The Two Worlds"
-award: "Blue Dragon Film Awards 2018"
+award: "Four awards including Best Technical Achievement, 2018 Blue Dragon Film Awards"
+viewers: "Over 11 million viewers in South Korea"
 tags: ["VFX", "compositing", "Dexter Studios"]
 links:
   youtube: "https://youtu.be/0x7Rzw4ejqM"
-featured: true
+featured: false
 order: 1
 draft: false
 ---

@@ -78,8 +78,15 @@ const gist = (abstract?: string) => abstract?.split(/(?<=\.)\s/)[0] ?? '';
                   {p.data.venue && row.type !== 'art' && (
                     <span class="recent__venue">{p.data.venue} · {p.data.year}</span>
                   )}
-                  {p.data.medium && <span class="recent__medium">{p.data.medium}</span>}
-                  <span class="recent__gist">{gist(p.data.abstract)}</span>
+                  {(p.data.medium ?? p.data.role) && <span class="recent__medium">{p.data.medium ?? p.data.role}</span>}
+                  {row.type === 'film' ? (
+                    <>
+                      {p.data.award && <span class="recent__honor">{p.data.award}</span>}
+                      {p.data.viewers && <span class="recent__honor">{p.data.viewers}</span>}
+                    </>
+                  ) : (
+                    <span class="recent__gist">{gist(p.data.abstract)}</span>
+                  )}
                 </figcaption>
               </figure>
             ))}
@@ -155,5 +162,6 @@ const gist = (abstract?: string) => abstract?.split(/(?<=\.)\s/)[0] ?? '';
     .recent__item figcaption .recent__gist { display: none; }
     .recent__item figcaption .recent__venue,
     .recent__item figcaption .recent__medium { display: block; font-size: 0.78rem; }
+    .recent__item figcaption .recent__honor { font-size: 0.78rem; margin-top: 0.1rem; }
   }
 </style>

@@ -4,10 +4,12 @@ type: "film"
 year: 2018
 authors: []
 venue: "Dexter Studios"
+role: "VFX compositor"
 abstract: "The sequel to The Two Worlds, based on Ho-Min Joo's webtoon. I worked on the post-production as a VFX compositor at Dexter Studios."
 teaser: ./still.jpg
 teaserAlt: "Along with the Gods: The Last 49 Days"
-award: "Grand Bell Award, Best Visual Effects (2018)"
+award: "Best Visual Effects, 2018 Grand Bell Awards"
+viewers: "Over 12 million viewers in South Korea"
 tags: ["VFX", "compositing", "Dexter Studios"]
 links:
   youtube: "https://youtu.be/0x7Rzw4ejqM"

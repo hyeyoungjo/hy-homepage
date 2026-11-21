@@ -4,10 +4,12 @@ type: "film"
 year: 2017
 authors: []
 venue: "Dexter Studios"
+role: "VFX compositor"
 abstract: "A South Korean political drama based on true events. I worked on the post-production as a VFX compositor at Dexter Studios."
 teaser: ./still.jpg
 teaserAlt: "1987: When the Day Comes"
-award: "Blue Dragon Film Awards 2018"
+award: "Best Film, 2018 Blue Dragon Film Awards"
+viewers: "Over 5 million viewers in South Korea"
 tags: ["VFX", "compositing", "Dexter Studios"]
 links:
   youtube: "https://youtu.be/0x7Rzw4ejqM"

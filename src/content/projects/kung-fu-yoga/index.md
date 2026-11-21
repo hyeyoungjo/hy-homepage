@@ -4,6 +4,7 @@ type: "film"
 year: 2017
 authors: []
 venue: "Dexter Studios"
+role: "VFX compositor"
 abstract: "A Chinese-Indian action-adventure comedy starring Jackie Chan, directed by Stanley Tong. I worked on the post-production as a VFX compositor at Dexter Studios."
 teaser: ./still.jpg
 teaserAlt: "Kung Fu Yoga"

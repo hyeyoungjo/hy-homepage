@@ -21,6 +21,7 @@ const search = [d.title, d.authors.join(' '), d.venue, d.abstract, d.tags.join('
 const yearStr = String(d.year);
 const meta = [
   d.venue ? (d.venue.includes(yearStr) ? d.venue : `${d.venue} · ${yearStr}`) : yearStr,
+  d.role,
   d.acceptanceRate && `Acceptance ${d.acceptanceRate}`,
 ]
   .filter(Boolean)
@@ -65,6 +66,7 @@ const meta = [
     }
     <p class="card__meta">{meta}</p>
     {d.award && <p class="card__award">{d.award}</p>}
+    {d.viewers && <p class="card__meta">{d.viewers}</p>}
     {d.abstract && <p class="card__excerpt">{d.abstract}</p>}
     <div class="card__links"><LinkRow links={d.links} originalLink={d.originalLink} /></div>
   </div>

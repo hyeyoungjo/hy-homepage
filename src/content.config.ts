@@ -19,6 +19,10 @@ const projects = defineCollection({
       abstract: z.string().optional(),
       // Medium, shown before the abstract on the home page (e.g. "Acrylic painting on paper").
       medium: z.string().optional(),
+      // My role on a film (e.g. "VFX compositor"), shown like an artwork's medium.
+      role: z.string().optional(),
+      // Box office reach for a film, e.g. "Over 12 million viewers in South Korea".
+      viewers: z.string().optional(),
       // Co-located image (e.g. ./teaser.png) — auto-optimized because it lives under src/.
       teaser: image().optional(),
       teaserAlt: z.string().optional(),

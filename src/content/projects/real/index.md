@@ -4,6 +4,7 @@ type: "film"
 year: 2017
 authors: []
 venue: "Dexter Studios"
+role: "VFX compositor"
 abstract: "A South Korean neo-noir action thriller directed by Sa-Rang Lee. I worked on the post-production as a VFX compositor at Dexter Studios."
 teaser: ./still.jpg
 teaserAlt: "Real"
