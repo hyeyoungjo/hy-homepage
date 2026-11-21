@@ -15,7 +15,7 @@ export const SITE = {
   socials: {
     scholar: 'https://scholar.google.com/citations?user=vSQMUMgAAAAJ&hl=en',
     github: 'https://github.com/hyeyoungjo',
-    linkedin: 'https://www.linkedin.com/in/hye-young-jo-2743b189/',
+    linkedin: 'https://www.linkedin.com/in/hyeyoungjo/',
     x: 'https://x.com/heyyoungsoul',
     imdb: 'https://www.imdb.com/name/nm19141432/',
     instagram: 'https://www.instagram.com/heyyoungsoul/',
