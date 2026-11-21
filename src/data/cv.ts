@@ -169,12 +169,12 @@ export const CV: {
       entries: [
         {
           title: 'University of Colorado Boulder',
-          date: 'Aug 2024 - Present',
+          date: 'Aug 2024-Current',
           lines: ['PhD student, Computer Science', 'Supervisor: Prof. Ryo Suzuki'],
         },
         {
           title: 'Korea Advanced Institute of Science and Technology (KAIST)',
-          date: 'Sep 2020 - Aug 2022',
+          date: 'Sep 2020-Aug 2022',
           lines: [
             'Master of Science, Industrial Design, *Best Master’s Thesis Award*',
             'Thesis: Exploring Different Augmented Reality Visualization Methods of Fitness Videos and Their Effects on the Exercise Experience',
@@ -183,7 +183,7 @@ export const CV: {
         },
         {
           title: 'Seoul National University',
-          date: 'Mar 2011 - Feb 2016',
+          date: 'Mar 2011-Feb 2016',
           lines: [
             'Bachelor of Fine Arts, Painting and Media Arts, *Cum Laude*',
             'Painting graduation exhibition on fluid identity [A1]',
@@ -201,7 +201,7 @@ export const CV: {
         {
           title: 'Autodesk, HCI and Visualization Team',
           href: 'https://www.research.autodesk.com/research-areas/science/human-computer-interaction-and-visualization/',
-          date: 'May 2026 - Aug 2026',
+          date: 'May 2026-Aug 2026',
           lines: [
             'Research Intern, Mentors: Dr. Frederik Brudy, Dr. David Ledo',
             'Created a design space for film directing, grounded in a cinematic corpus, to establish a shared language between human creators and generative AI.',
@@ -210,7 +210,7 @@ export const CV: {
         {
           title: 'Fujitsu Research of America, Converging Lab',
           href: 'https://www.fujitsu.com/us/about/businesspolicy/tech/rd/converging-lab/',
-          date: 'May 2025 - Oct 2025',
+          date: 'May 2025-Oct 2025',
           lines: [
             'Research Intern, Mentors: Dr. Mose Sakashita, Dr. Aditi Mishra, Dr. Aakar Gupta, Dr. Koichiro Niinuma',
             'Built a system that grounds AI video generation in street-view imagery for spatially consistent shots, evaluated with 12 filmmakers [C7].',
@@ -219,7 +219,7 @@ export const CV: {
         {
           title: 'University of Colorado Boulder, Programmable Reality Lab',
           href: 'https://www.colorado.edu/atlas/programmable-reality-lab',
-          date: 'Aug 2024 - Present',
+          date: 'Aug 2024-Current',
           lines: [
             'Graduate Research Assistant, Mentor: Prof. Ryo Suzuki',
             'Study how people create and consume video by building interactive systems with generative AI, extended reality, and virtual agents for storytelling and education [C6, C7, R1].',
@@ -228,7 +228,7 @@ export const CV: {
         {
           title: 'Chung-Ang University, Human-AI Interaction Design & Fabrication Lab',
           href: 'https://artifab.yoonji-kim.com/main-page',
-          date: 'Jan 2023 - Jul 2024',
+          date: 'Jan 2023-Jul 2024',
           lines: [
             'Research Assistant, Mentor: Prof. Yoonji Kim',
             'Built a filmmaking previsualization tool using image segmentation and deepfake face swapping [C4], and haptic systems that recreate a personal trainer’s touch through vibrotactile and electrical stimulation [E1, C5].',
@@ -237,7 +237,7 @@ export const CV: {
         {
           title: 'KAIST, Make Lab',
           href: 'https://make.kaist.ac.kr/',
-          date: 'Sep 2020 - Sep 2022',
+          date: 'Sep 2020-Sep 2022',
           lines: [
             'Graduate Research Assistant, Mentor: Prof. Andrea Bianchi',
             'Designed and evaluated augmented reality (AR), virtual reality (VR), and haptic systems for home fitness, remote education, and immersive VR [C1-C3].',
@@ -252,7 +252,7 @@ export const CV: {
       entries: [
         {
           title: 'VR/AR Generalist at [Dexter Studios](https://www.dexterstudios.com/)',
-          date: 'Aug 2018 - Apr 2020',
+          date: 'Aug 2018-Apr 2020',
           lines: [
             'New Media Division, Immersive Content and Virtual Production',
             'Created 3D graphics for VR films, AR exhibitions and apps, and virtual production, covering character design, environments, visual scripting, lighting, and look development [X1-X2, X4].',
@@ -260,7 +260,7 @@ export const CV: {
         },
         {
           title: 'Film VFX Compositor at [Dexter Studios](https://www.dexterstudios.com/)',
-          date: 'Sep 2016 - Jul 2018',
+          date: 'Sep 2016-Jul 2018',
           lines: [
             'Film Post-Production VFX Compositing Team',
             'Composited live-action plates, 2D elements, and 3D CG renders into seamless final shots for feature films [F1-F6].',
@@ -339,7 +339,7 @@ export const CV: {
       kind: 'entries',
       summary: 'Summary: I have received $181,000 in fellowships, awards, and travel grants.',
       entries: [
-        { title: 'Google PhD Fellowship', date: 'Fall 2025 - Spring 2027', lines: ['Awarded in the Human-Computer Interaction category; full tuition and stipend ($85,000/year).'] },
+        { title: 'Google PhD Fellowship', date: 'Fall 2025-Spring 2027', lines: ['Awarded in the Human-Computer Interaction category; full tuition and stipend ($85,000/year).'] },
         { title: 'Girgensohn Family Endowed Graduate Fellowship', date: '2026', lines: ['Awarded to up to two PhD students a year by the Department of Computer Science, University of Colorado Boulder ($5,000).'] },
         { title: 'Ralph J. Slutz Student Excellence Award', date: '2025', lines: ['Awarded to two graduate students a year by the Department of Computer Science, University of Colorado Boulder ($1,000).'] },
         { title: 'Gary Marsden Travel Award', date: '2024', lines: ['Awarded by ACM SIGCHI to attend CHI 2024 ($3,000).'] },
